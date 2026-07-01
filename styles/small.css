@@ -1,0 +1,153 @@
+/*  ----------- COLOR SCHEME ------------ 
+orange #ff8007
+yellow #ffb404
+blue #05badd
+dark blue #2b4871
+*/
+
+/**************** SITE WIDE *****************/
+* {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    box-sizing: border-box;
+    color: #2b4871
+}
+
+h2 {
+    text-align: center;
+    background-color: #2b4871;
+    color: white;
+    padding: 10px;
+}
+
+main {
+    margin: 0 10px;
+}
+
+section {
+    display: block;
+    background-color: #eee;
+    
+}
+
+section p {
+    padding: 0 10px 10px 10px;
+}
+
+section img {
+    align-items: center;
+    width: 200px;
+    height: auto;
+}
+
+/**************** HEADER *******************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: center;
+    border-bottom: solid 1px #ddd;
+    column-gap: 10px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #2b4871;
+
+}
+
+/******************** HAMBURGER ************************/
+.hamburger {
+    background: none;
+    border: none;
+    color: #2b4871;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/********************** NAVIGATION ****************************/
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    text-decoration: underline;
+    color: white;
+}
+
+.navigation li{
+    background-color: #2b4871;
+}
+
+.navigation a:hover {
+    background-color: #ddd;
+    color: #2b4871;
+}
+
+
+/***************** FOOTER *******************/
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
