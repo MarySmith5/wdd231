@@ -7,8 +7,6 @@
     <meta name="description"
         content="WDD 231: Web Frontend Development I -- Course Home Page with information about Mary Smith and her projects.">
     <meta name="author" content="Mary Smith">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
@@ -30,9 +28,9 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">Chamber Project</a></li>
-            <li><a href="#">Final Project</a></li>
+            <li class="current"><a href="#" aria-label="Home">Home</a></li>
+            <li><a href="#" aria-label="Chamber Project">Chamber Project</a></li>
+            <li><a href="#" aria-label="Final Project">Final Project</a></li>
         </ul>
     </nav>
     <main>
@@ -45,16 +43,16 @@
         <section>
             <h2>Student Photo</h2>
             <div class="photo">
-                <img src="images/Me.webp" alt="the author, a middle-aged woman holding a baby" height="500" width="500" loading="lazy">
+                <img src="images/Me.webp" alt="the author, a middle-aged woman holding a baby" height="200" width="200" loading="lazy">
             </div>
         </section>
         </div>
         <section class="courses">
             <h2>Web Certificate courses</h2>
             <div class="categories">
-                <button id="all">All</button>
-                <button id="cse">CSE</button>
-                <button id="wdd">WDD</button>
+                <button id="all" aria-label="All">All</button>
+                <button id="cse" aria-label="CSE">CSE</button>
+                <button id="wdd" aria-label="WDD">WDD</button>
             </div>
             <div class="card-links">
             </div>
