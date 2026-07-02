@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+    <script src="scripts/course-objectives.js" defer></script>
     <title>WDD 231 Course Home Page</title>
 </head>
 
@@ -43,10 +43,20 @@
         </section>
         <section>
             <h2>Student Photo</h2>
-            <img src="images/Me.webp" alt="the author, a middle-aged woman holding a baby" height="500" width="500">
+            <div class="photo">
+                <img src="images/Me.webp" alt="the author, a middle-aged woman holding a baby" height="500" width="500">
+            </div>
         </section>
-        <section>
+        <section class="courses">
             <h2>Web Certificate courses</h2>
+            <div class="categories">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div class="card-links">
+            </div>
+            <p id="count"></p>
         </section>
     </main>
     <footer>

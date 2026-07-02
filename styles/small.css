@@ -27,19 +27,44 @@ main {
 }
 
 section {
-    display: block;
     background-color: #eee;
-    
 }
 
 section p {
     padding: 0 10px 10px 10px;
 }
 
-section img {
-    align-items: center;
+.photo {
+    display: flex;
+    justify-content: center;
+}
+
+.photo img {
     width: 200px;
     height: auto;
+    padding-bottom: 20px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.categories button {
+    box-shadow: 1px 1px 4px #999;
+    border:#2b4871 solid 2px;
+    border-radius: 6px;
+    color: white;
+    background-color: #2b4871;
+    padding: 10px 0 7px 0;
+
+}
+
+.categories button:hover {
+    color:#2b4871;
+    background-color: #ccc;
 }
 
 /**************** HEADER *******************/
@@ -115,7 +140,7 @@ header span {
 }
 
 .navigation a:hover {
-    background-color: #ddd;
+    background-color: #ccc;
     color: #2b4871;
 }
 

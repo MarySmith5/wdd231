@@ -77,3 +77,38 @@ const courses = [
         completed: false
     }
 ]
+
+const allBtn = document.querySelector("#all");
+const cseBtn = document.querySelector("#cse");
+const wddBtn = document.querySelector("#wdd");
+displayCourseLink(courses)
+
+function displayCourseLink(courses) {
+    document.querySelector(".card-links").innerHTML = "";
+    courses.forEach(course => {
+        let courseBtn = document.createElement("button");
+        let courseTitle = `${course.subject} ${course.number}`;
+        if (course.completed == true) {
+            courseBtn.innerHTML = "⭐️ " + courseTitle;
+        }
+        else {
+            courseBtn.innerHTML = courseTitle;
+        }
+        document.querySelector(".card-links").appendChild(courseBtn);
+    })
+}
+
+allBtn.addEventListener("click", (e) => {
+    // e.preventDefault();
+    displayCourseLink(courses);
+});
+
+cseBtn.addEventListener("click", (e) => {
+    // e.preventDefault();
+    displayCourseLink(courses.filter(course => course.subject === "CSE"));
+});
+
+wddBtn.addEventListener("click", (e) => {
+    // e.preventDefault();
+    displayCourseLink(courses.filter(course => course.subject === "WDD"));
+});
