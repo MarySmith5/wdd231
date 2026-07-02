@@ -27,11 +27,15 @@ main {
 }
 
 section {
-    background-color: #eee;
+    text-align: center;
 }
 
 section p {
     padding: 0 10px 10px 10px;
+}
+
+.bio section{
+    background-color: #eee;
 }
 
 .photo {
@@ -64,7 +68,23 @@ section p {
 
 .categories button:hover {
     color:#2b4871;
-    background-color: #ccc;
+    background-color: #eee;
+}
+
+.card-links {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.card-links button {
+    margin: 20px 10px 0;
+    background-color: #eee;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px #999;
+    border: #2b4871 solid 1px;
+    padding: 10px;
 }
 
 /**************** HEADER *******************/
@@ -114,6 +134,7 @@ header span {
 
 .navigation.show {
     display: block;
+    background-color: #2b4871;
 }
 
 .navigation ul {
@@ -135,12 +156,12 @@ header span {
     color: white;
 }
 
-.navigation li{
-    background-color: #2b4871;
+.navigation li.current:hover {
+    color: #2b4871;
 }
 
 .navigation a:hover {
-    background-color: #ccc;
+    background-color: #eee;
     color: #2b4871;
 }
 
@@ -156,6 +177,7 @@ footer {
     display: flex;
     justify-content: center;
     column-gap: 8px;
+    margin: 20px;
 }
 
 .social a {

@@ -84,18 +84,21 @@ const wddBtn = document.querySelector("#wdd");
 displayCourseLink(courses)
 
 function displayCourseLink(courses) {
+    let credits = 0;
     document.querySelector(".card-links").innerHTML = "";
     courses.forEach(course => {
         let courseBtn = document.createElement("button");
         let courseTitle = `${course.subject} ${course.number}`;
         if (course.completed == true) {
             courseBtn.innerHTML = "⭐️ " + courseTitle;
+            credits += course.credits;
         }
         else {
             courseBtn.innerHTML = courseTitle;
         }
         document.querySelector(".card-links").appendChild(courseBtn);
     })
+    document.querySelector("#count").innerHTML = `The total credits for the completed course(s) marked with ⭐️ is ${credits}`;
 }
 
 allBtn.addEventListener("click", (e) => {

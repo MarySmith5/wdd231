@@ -15,7 +15,7 @@
     .navigation {
         display: block;
         border-bottom: solid 1px #ddd;
-
+        background-color: #2b4871;
     }
 
     .navigation ul {
@@ -24,5 +24,15 @@
 
     .navigation a {
         border: none;
+    }
+
+    .bio {
+        display: grid;
+        grid-template-columns: auto 33%;
+        column-gap: 10px;
+    }
+
+    .bio h2 {
+        margin-top: 0;
     }
 }
