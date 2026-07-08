@@ -1,0 +1,17 @@
+{
+    "family-name": "Jones",
+    "move-in-date": "11-02-2025",
+    "visited": true,
+    "household":[
+        {
+            "name": "Mary",
+            "gender": "female",
+            "birthdate": "02-02-1975"
+        },
+        {
+            "name": "Paul",
+            "gender": "male",
+            "birthdate": "08-07-1969"
+        }
+    ]
+}
