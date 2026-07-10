@@ -173,9 +173,15 @@ header span {
 
 /***************** FOOTER *******************/
 footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: #eee;
-    padding: 1rem 10px;
-    text-align: center;
+    padding: 10px 30px 20px 30px;
+    align-items: center;
+}
+
+footer p {
+    margin: .25rem 0;
 }
 
 .social {
