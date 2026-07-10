@@ -1,0 +1,12 @@
+.view {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.view button {
+    padding: .25rem 1rem;
+    border: #2b4871 solid 1px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 231: Web Frontend Development I -- Canon City, CO, Chamber of Commerce Directory Page">
+    <meta property="og:title" content="Canon City, CO, Chamber of Commerce Directory Page">
+    <meta property="og:description"
+        content="WDD 231: Web Frontend Development I -- Canon City, CO, Chamber of Commerce Directory Page">
+    <meta property="og:url" content="https://marysmith5.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://marysmith5.github.io/wdd231/chamber/images/chamber-hero.webp">
+    <meta name="author" content="Mary Smith">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="icon" href="images/favicon-chamber.ico">
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <title>Chamber Directory Page</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/mountains.svg" alt="mountains site logo" width="800" height="800">
+        <span>Canon City, CO, Chamber of Commerce</span>
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="#" aria-label="Home">Home</a></li>
+                    <li class="current"><a href="#" aria-label="Directory">Directory</a></li>
+                    <li><a href="#" aria-label="Join">Join</a></li>
+                    <li><a href="#" aria-label="Discover">Discover</a></li>
+                </ul>
+            </nav>
+        <button id="dark-theme"><img src="images/dark-theme.svg" alt="dark-theme toggle button" width="800" height="800"></button>
+        <button id="ham-btn" class="hamburger" aria-label="Navigation"></button>
+    </header>
+
+    <main>
+        <h1>Directory</h1>
+        <div class="cards">
+        </div>
+        <div class="view">
+            <button id="grid-view" aria-label="Grid-view">Grid</button>
+            <button id="list-view" aria-label="List-view">List</button>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> • Mary Smith • California, USA</p>
+        <div class="social">
+            <a href="https://www.facebook.com/mary.smith.941681" target="_blank"><img src="images/facebook.svg" alt="Facebook"
+                    width="16" height="16"></a>
+            <a href="https://github.com/MarySmith5" target="_blank"><img src="images/github.svg" alt="Github" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/mary-smith-85b5a34b" target="_blank"><img src="images/linkedin.svg"
+                    alt="LinkedIn" width="16" height="16"></a>
+        </div>
+        <p id="lastModified">Last Modification</p>
+    </footer>
+</body>
+
+</html>

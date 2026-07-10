@@ -1,0 +1,235 @@
+/*  ----------- COLOR SCHEME ------------ 
+orange #ff8007
+yellow #ffb404
+blue #05badd
+dark blue #2b4871
+*/
+
+/**************** SITE WIDE *****************/
+* {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    box-sizing: border-box;
+    color: #2b4871
+}
+
+h2 {
+    text-align: center;
+    background-color: #2b4871;
+    color: white;
+    padding: 10px;
+}
+
+main {
+    margin: 0 10px;
+    padding: 0 20px;
+}
+
+/* section {
+    text-align: center;
+}
+
+section p {
+    padding: 0 10px 10px 10px;
+}
+
+.bio section {
+    background-color: #eee;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+}
+
+.photo img {
+    width: 200px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.categories button {
+    box-shadow: 1px 1px 4px #999;
+    border: #2b4871 solid 2px;
+    border-radius: 6px;
+    color: white;
+    background-color: #2b4871;
+    padding: 10px 0 7px 0;
+
+}
+
+.categories button:hover {
+    color: #2b4871;
+    background-color: #eee;
+}
+
+.card-links {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.card-links button {
+    margin: 20px 10px 0;
+    background-color: #eee;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px #999;
+    border: #2b4871 solid 1px;
+    padding: 10px;
+} */
+
+/**************** HEADER *******************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px 44px;
+    padding: 5px 20px 5px 30px;
+    align-items: center;
+    column-gap: 10px;
+    background-color: #2b4871;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: white;
+
+}
+
+#dark-theme {
+    border: none;
+    background-color: #2b4871;
+}
+
+/******************** HAMBURGER ************************/
+.hamburger {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/********************** NAVIGATION ****************************/
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+    background-color: #2b4871;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation li.current {
+    text-decoration: underline;
+    color: white;
+}
+
+.navigation li.current:hover {
+    color: #2b4871;
+}
+
+.navigation a:hover {
+    background-color: #eee;
+    color: #2b4871;
+}
+
+
+/***************** FOOTER *******************/
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    margin: 20px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+/* ********** Large screen css ************ */
+
+@media only screen and (min-width: 38rem) {
+    body {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto auto 44px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+}
