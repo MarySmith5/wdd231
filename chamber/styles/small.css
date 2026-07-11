@@ -28,7 +28,6 @@ header {
     grid-template-columns: 24px auto 44px 44px;
     padding: 5px 20px 5px 30px;
     align-items: center;
-    column-gap: 10px;
     background-color: #2b4871;
 }
 
@@ -49,6 +48,10 @@ header span {
     background-color: #2b4871;
 }
 
+#title {
+    padding: 0 10px;
+}
+
 /******************** HAMBURGER ************************/
 .hamburger {
     background: none;
@@ -67,6 +70,9 @@ header span {
 }
 
 /********************** NAVIGATION ****************************/
+/* nav {
+    order: 3;
+} */
 
 .navigation {
     display: none;
@@ -75,6 +81,7 @@ header span {
 .navigation.show {
     display: block;
     background-color: #2b4871;
+    order: 3;
 }
 
 .navigation ul {
