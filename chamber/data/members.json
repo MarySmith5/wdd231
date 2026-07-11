@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "First Choice Fitness",
+            "address": "1530 Elm Ave., Canon City, CO 81212",
+            "phone": "(719) 269-3316",
+            "url": "https://firstchoicefitness.net/",
+            "image": "https://img1.wsimg.com/isteam/ip/4a4c3cbb-888b-4bd0-b9d5-3d9879b7864e/IMG_0063.jpeg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:360,cg:true",
+            "level": 2
+        },
+        {
+            "name": "Jim's Tire Sesrvice Inc.",
+            "address": "1005 S 9th St., Canon City, CO 81212",
+            "phone": "(719) 275-1886",
+            "url": "https://www.myjimstires.com/",
+            "image": "https://c1.nd-cdn.us/44658default-coupon.png",
+            "level": 3
+        },
+        {
+            "name": "Big Burger World",
+            "address": "1205 S 9th St., Canon City, CO 81212",
+            "phone": "(719) 275-8079",
+            "url": "https://bigburgerworld.shop/",
+            "image": "https://bigburgerworld.shop/public/media/bigburgerworld-shop/photo-6.jpg",
+            "level": 3
+        },
+        {
+            "name": "The B. Box, LLC School of Dance & Kinetic Expression",
+            "address": "202 E Douglas Ave, Cañon City, CO 81212",
+            "phone": "(719) 289-6751",
+            "url": "https://www.facebook.com/DanceTheB.Box/",
+            "image": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/501267522_1255948803204986_1389318832965583793_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1366&ctp=s2048x1366&_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=i5vhPxFPSl0Q7kNvwGJsQ9d&_nc_oc=AdrMbF2I26O3LK4QPEUMLWBG5NJ-bgOZksOPG0t0jz8XCQdsqPtVQcO0DiyjRq7kQMc&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=LLHUI3ZDcPtG0DVFQJT8Bg&_nc_ss=7b2a8&oh=00_AQBC-uXxIrtXluHUarK5wFetCVu9dqazbuMgE-fh-xlNvA&oe=6A575306",
+            "level": 1
+        },
+        {
+            "name": "Coming Home Group of EWN – Real Broker LLC",
+            "address": "729 Main Street, Canon City, CO",
+            "phone": "(719) 429-7288",
+            "url": "https://dellarieger.com/",
+            "image": "https://dellarieger.com/wp-content/uploads/2025/03/RGAA-Headshots-1.png",
+            "level": 3
+        },
+        {
+            "name": "ATENCIO GLASS & Building Concepts Inc.",
+            "address": "2930 E. Main St., Cañon City, Colorado",
+            "phone": "(719) 275-9202",
+            "url": "https://atencioglass.com/",
+            "image": "https://images.squarespace-cdn.com/content/v1/6a2cc05224d5120ff52c942c/029f7344-a0ec-4400-b342-b8ee65e4ff28/bodyimage01g.jpg?format=750w",
+            "level": 2
+        },
+        {
+            "name": "H&R Block",
+            "address": "304-a 16th, Canon City, Colorado",
+            "phone": "(719) 275-3544",
+            "url": "https://www.hrblock.com/tax-office-near-me/colorado/canon-city/7082/?otppartnerid=9308&campaignid=pw_mcm_9308_9762&utm_medium=local",
+            "image": "https://hrbent.scene7.com/is/image/hrblock/hrb-image-couple-filing-taxes-in-kitchen-1200x960?fmt=png-alpha&op_sharpen=1&wid=1200",
+            "level": 1
+        }
+    ]
+}
