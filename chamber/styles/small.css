@@ -127,8 +127,10 @@ footer p {
 
 .social {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     column-gap: 8px;
+    row-gap: 8px;
     margin: 20px;
 }
 
