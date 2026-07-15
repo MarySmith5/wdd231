@@ -1,0 +1,15 @@
+.card {
+    border: 1px solid #5d6f67;
+    background-color:  #f6f0da;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card p {
+    color: #3a5250;
+}
+
+.card figcaption {
+    text-transform: capitalize;
+    color: #3a5250;
+}
