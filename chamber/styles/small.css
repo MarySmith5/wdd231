@@ -267,7 +267,6 @@ footer p {
     border-bottom: 5px solid #ff8007;
     display: block;
     border-top: 20px solid #ffb404;
-    /* position: relative; */
 }
 
 .weather {
@@ -275,7 +274,6 @@ footer p {
     background-color: #eee;
     border-radius: 10px;
     text-align: center;
-    /* margin: 1rem; */
     padding: 10px;
     margin: 0;
     align-content: center;
