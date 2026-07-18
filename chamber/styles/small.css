@@ -175,14 +175,14 @@ footer p {
     background-color: white;
 }
 
-#grid {
+.grid {
     display: grid;
     grid-gap: 0.5rem;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
     margin-bottom: 20px;
 }
 
-#grid section {
+.grid section {
     margin: 0.5rem;
     padding-bottom: 0.5rem;
     background-color: white;
@@ -192,20 +192,18 @@ footer p {
     text-align: center;
 }
 
-#grid img {
+.grid img {
     width: 100%;
     max-width: 200px;
     height: auto;
     padding: 10px;
 }
 
-#grid h2 {
+.grid h2 {
     text-align: center;
     color: #2b4871;
     margin: 0;
-    padding: 0 10px;
     font-size: 1rem;
-    height: 4rem;
     grid-column: 1 / 3;
     align-content: center;
 }
@@ -226,22 +224,137 @@ footer p {
     color: #ff8007;
 }
 
-#list {
+.list {
     display: block;
 }
 
-#list section {
+.list section {
     display: grid;
     grid-template-columns: 1fr 1fr .75fr .5fr;
     margin-bottom: 20px;
+    padding: 0 20px 0 10px;
     align-items: center;
+    justify-items: center;
 }
 
-#list section:nth-child(odd) {
+.list section:nth-child(odd) {
     background-color: #eee;
 }
 
-#list p {
+.list p {
     padding: 5px 10px;
 }
 
+.nameDiv p{
+    font-style: italic;
+    font-size: .5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nameDiv {
+    height: 4rem;
+    padding: 10px;
+    align-content: center;
+}
+
+
+/* *********** HOME PAGE *************** */
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid #ff8007;
+    display: block;
+    border-top: 20px solid #ffb404;
+    /* position: relative; */
+}
+
+.weather {
+    border: 2px solid #05badd;
+    background-color: #eee;
+    border-radius: 10px;
+    text-align: center;
+    margin: 1rem;
+}
+
+.weather p {
+    color: #2b4871;
+}
+
+.weather figcaption {
+    text-transform: capitalize;
+    color: #2b4871;
+}
+
+.events img {
+    width: auto;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.events p {
+    font-size: .75rem;
+}
+
+.events section {
+    border-top: 3px solid #ffb404;
+    padding-bottom: 20px;
+}
+
+.events section:last-of-type{
+    border-bottom: 3px solid #ffb404;
+    margin-bottom: 20px;
+}
+
+.events section h2 {
+ text-align: left;
+}
+
+.desc {
+    display: block;
+}
+
+.weather {
+    padding: 10px;
+    margin: 0;
+    align-content: center;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+#right-side {
+    align-content: center;
+    
+}
+
+.call {
+    background-color: #2b4871;
+    padding:1rem;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
+    border-top: 10px solid #ffb404;
+    border-bottom: 10px solid #ff8007;
+    box-shadow: 0 0 20px #777;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.call a {
+    color: white;
+    padding: 0 auto;
+    font-size: 1.5rem;
+}
+
+.call a:hover {
+    color: #2b4871;
+    background-color: white;
+}
+
+.call p {
+    color: white;
+}

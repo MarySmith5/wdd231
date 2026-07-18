@@ -24,4 +24,20 @@
         border: none;
     }
 
+    .middle {
+        display: grid;
+        grid-template-columns: auto 200px;
+        gap: 3rem;
+    }
+
+    .desc {
+        display: grid;
+        grid-template-columns: 200px auto;    
+    }
+
+    .desc p {
+        margin-top: 0;
+    }
+
+
 }
