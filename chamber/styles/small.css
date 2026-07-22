@@ -70,24 +70,16 @@ header span {
 }
 
 /********************** NAVIGATION ****************************/
-/* nav {
-    order: 3;
-} */
+@media only screen and (max-width: 38rem) {
+    .navigation {
+        display: none;
+    }
 
-.navigation {
-    display: none;
-}
-
-.navigation.show {
-    display: flex;
-    background-color: #2b4871;
-    order: 3;
-}
-
-.navigation ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    .navigation.show {
+        display: flex;
+        background-color: #2b4871;
+        order: 3;
+    }
 }
 
 .navigation a {
@@ -95,6 +87,12 @@ header span {
     padding: .8rem 10px;
     color: white;
     text-decoration: none;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation li.current {
