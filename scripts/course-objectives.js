@@ -110,11 +110,14 @@ function displayCourseModal(course) {
     let courseHeader = document.createElement('h2');
     courseHeader.textContent = `${course.subject} ${course.number}`;
 
-    let title = document.createElement('p');
+    let title = document.createElement('h3');
     title.textContent = `${course.title}`;
 
     let credits = document.createElement('p');
     credits.textContent = `${course.credits} credits`;
+
+    let certificate = document.createElement('p');
+    certificate.textContent = `${course.certificate}`;
 
     let description = document.createElement('p');
     description.textContent = `${course.description}`;
@@ -125,10 +128,11 @@ function displayCourseModal(course) {
 
     let closeBtn = document.createElement("button");
     closeBtn.setAttribute('id', 'modalClose');
-    closeBtn.textContent = "❌"
+    closeBtn.textContent = "❌";
     modal.appendChild(courseHeader);
     modal.appendChild(title);
     modal.appendChild(credits);
+    modal.appendChild(certificate);
     modal.appendChild(description);
     modal.appendChild(tech);
     modal.appendChild(closeBtn);
@@ -139,6 +143,23 @@ function displayCourseModal(course) {
     });
 }
 
+// function displayCourseDetails(course) {
+//     courseDetails.innerHTML = '';
+//     courseDetails.innerHTML = `
+//     <button id="closeModal">❌</button>
+//     <h2>${course.subject} ${course.number}</h2>
+//     <h3>${course.title}</h3>
+//     <p><strong>Credits</strong>: ${course.credits}</p>
+//     <p><strong>Certificate</strong>: ${course.certificate}</p>
+//     <p>${course.description}</p>
+//     <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+//   `;
+//     courseDetails.showModal();
+
+//     closeModal.addEventListener("click", () => {
+//         courseDetails.close();
+//     });
+// }
 
 
 allBtn.addEventListener("click", (e) => {
