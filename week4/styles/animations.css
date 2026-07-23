@@ -1,0 +1,67 @@
+#loader {
+    width: 50px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 255, 0.4) 0px 0px 2rem;
+    margin: 2rem;
+    border: 5px solid;
+    border-color: rgb(153, 153, 153) transparent;
+    border-radius: 50%;
+    animation: spin 1.5s linear 0s infinite normal none running;
+}
+
+#loader::after {
+    content: "⚙️";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 1.5s ease-in-out 0s infinite normal none running pulse;
+}
+
+@keyframes spin {
+    100% {
+            transform: rotate(360deg);
+        }
+}
+
+@keyframes pulse {
+    0%, 100% {transform: translate(-50%, -50%) scale(1);}
+    50% {transform: translate(-50%, -50%) scale(1.25);}
+}
+
+
+#loader2 {
+    width: 50px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 255, 0.4) 0px 0px 2rem;
+    margin: 2rem;
+    border: 5px solid;
+    border-color: rgb(153, 153, 153) transparent;
+    border-radius: 50%;
+    
+}
+
+#loader2:hover {
+    animation: spin 1.5s linear 0s infinite normal none running;
+}
+
+#loader2:hover::after {
+    content: "⚙️";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 1.5s ease-in-out 0s infinite normal none running pulse2;
+}
+
+@keyframes pulse2 {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(2.5);
+    }
+}
