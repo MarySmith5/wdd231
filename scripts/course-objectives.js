@@ -81,6 +81,7 @@ const courses = [
 const allBtn = document.querySelector("#all");
 const cseBtn = document.querySelector("#cse");
 const wddBtn = document.querySelector("#wdd");
+const modal = document.querySelector("#course-details");
 displayCourseLink(courses)
 
 function displayCourseLink(courses) {
@@ -97,9 +98,48 @@ function displayCourseLink(courses) {
             courseBtn.innerHTML = courseTitle;
         }
         document.querySelector(".card-links").appendChild(courseBtn);
+        courseBtn.addEventListener("click", (e) => {
+            displayCourseModal(course);
+        })
     })
     document.querySelector("#count").innerHTML = `The total credits for the completed course(s) marked with ⭐️ is ${credits}`;
 }
+
+function displayCourseModal(course) {
+    modal.replaceChildren();
+    let courseHeader = document.createElement('h2');
+    courseHeader.textContent = `${course.subject} ${course.number}`;
+
+    let title = document.createElement('p');
+    title.textContent = `${course.title}`;
+
+    let credits = document.createElement('p');
+    credits.textContent = `${course.credits} credits`;
+
+    let description = document.createElement('p');
+    description.textContent = `${course.description}`;
+
+    let tech = document.createElement('p');
+    let techString = course.technology.toString();
+    tech.textContent = `Technology: ${techString}`;
+
+    let closeBtn = document.createElement("button");
+    closeBtn.setAttribute('id', 'modalClose');
+    closeBtn.textContent = "❌"
+    modal.appendChild(courseHeader);
+    modal.appendChild(title);
+    modal.appendChild(credits);
+    modal.appendChild(description);
+    modal.appendChild(tech);
+    modal.appendChild(closeBtn);
+
+    modal.showModal();
+    closeBtn.addEventListener("click", (e) => {
+        modal.close();
+    });
+}
+
+
 
 allBtn.addEventListener("click", (e) => {
     // e.preventDefault();

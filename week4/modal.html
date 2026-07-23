@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/modal.css">
+    <script src="scripts/modal.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -10,6 +12,25 @@
         <h2>Modal Dialog</h2>
         <p>This is a modal dialog.</p>
         <button id="closeModal">Close</button>
+    </dialog>
+    <p>This is an example of using HTML only <code>popover</code> to support the dialog.<br> Click the button below to open
+        a modal newsletter signup form.</p>
+    <button class="button open-button" popovertarget="newsletter">Sign Up</button>
+    
+    <p>Note that the <code>popovertarget</code> attribute needs to point to the dialog element using its <code>id </code>
+        attribute value to open and close the modal.</p>
+    
+    <dialog class="modal" id="newsletter" popover>
+        <button class="close-button" popovertarget="newsletter" popovertargetaction="hide">❌</button>
+        <h2>Stake Trek</h2>
+        <h3>Volunteer Signup</h3>
+        <form class="form" method="dialog">
+            <label>Name<input type="text" required></label>
+            <label>Phone<input type="tel" pattern="^\+?\d{1,4}?\s?(\(?\d{3}\)?\s?-?\s?\d{3}\s?-?\s?\d{4})$"
+                    placeholder="+1 555-123-4567" required></label>
+            <button class="button" type="submit">Sign Up</button>
+        </form>
+    
     </dialog>
 </body>
 </html>
