@@ -415,3 +415,53 @@ button[type="submit"] {
     margin: -1rem 2% 2rem 4%;
     box-shadow: 0 0 20px #777;;
 }
+
+.levelCards {
+    margin: 2rem 2% 2rem 2%;
+    padding: 1rem 2% 2rem 2%;
+    max-width: 800px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition:3s opacity 1s ease-in-out;
+
+}
+
+.levelCards.visible {
+    opacity: 1;
+}
+
+.levelCards section {
+    background-color: #2b4871;
+    padding: 1rem;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.levelCards h1 {
+    font-size: 1.5rem;
+}
+
+.levelCards h2 {
+    color: white;
+    margin: 0 .5rem .5rem .5rem;
+    font-size: 1rem;
+    
+}
+
+dialog {
+    margin: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    padding: 20px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+#thanks {
+    text-align: center;
+}

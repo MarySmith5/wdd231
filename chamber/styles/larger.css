@@ -39,5 +39,9 @@
         margin-top: 0;
     }
 
-
+    .joinDiv {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
 }

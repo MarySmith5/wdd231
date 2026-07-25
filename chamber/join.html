@@ -43,26 +43,66 @@
         <button id="ham-btn" class="hamburger" aria-label="Navigation"></button>
     </header>
     <main>
-        <form method="get" action="thankyou.html" class="wf1">
-            <fieldset>
-                <legend>Chamber Membership Join</legend>
-                <label for="firstName">First Name*<input id="firstName" type="text" name="firstName" title="First name is required" required autocomplete="given-name"></label>
-                <label for="lastName">Last Name*<input name="lastName" id="lastName" type="text" title="Last name is required" autocomplete="family-name" required></label>
-                <label for="orgTitle">Title<input name="orgTitle" id="orgtitle" type="text" pattern="[\-A-Za-z\s]{7,}" title="Minimum 7 characters. Letters, spaces, and hyphens only." autocomplete="organization-title"></label>
-                <label for="email">Email<input name="email" id="email" type="email" autocomplete="email" title="Email address is required" placeholder="yourEmail@gmail.com" required></label>
-                <label for="mobileNum">Mobile Phone Number<input type="telephone" name="mobileNum" title="Mobile/cellphone number is required" autocomplete="mobile" required></label>
-                <label for="businessName">Business/Organization Name<input type="text" name="businessName" title="Business/organiztion name is required" required autocomplete="organization"></label>
-                <label for="businessDescription">Business/Organization Description<textarea name="businessDescription" title="Business/organiztion description" rows="8" cols="50"></textarea></label>
-                <label for="timeStamp"><input id="timestamp" type="hidden" name="timeStamp" title="timeStamp"></label>
-                <div>Membership Level</div>
-                <label><input id="np" type="radio" name="level" value="np" required>NP Membership is for non profit organizations and there is no fee</label>
-                <label><input id="bronze" type="radio" name="level" value="bronze" required>Bronze Membership</label>
-                <label><input id="silver" type="radio" name="level" value="silver" required>Silver Membership</label>
-                <label><input id="gold" type="radio" name="level" value="gold" required>Gold Membership</label>
-            </fieldset>
-            <button type="submit">Join</button>
-        </form>
-
+        <div class="joinDiv">
+            <form method="get" action="thankyou.html" class="wf1">
+                <fieldset>
+                    <legend>Chamber Membership Join</legend>
+                    <label for="firstName">First Name*<input id="firstName" type="text" name="firstName" title="First name is required" required autocomplete="given-name"></label>
+                    <label for="lastName">Last Name*<input name="lastName" id="lastName" type="text" title="Last name is required" autocomplete="family-name" required></label>
+                    <label for="orgTitle">Title<input name="orgTitle" id="orgTitle" type="text" pattern="[\-A-Za-z\s]{7,}" title="Minimum 7 characters. Letters, spaces, and hyphens only." autocomplete="organization-title"></label>
+                    <label for="email">Email<input name="email" id="email" type="email" autocomplete="email" title="Email address is required" placeholder="yourEmail@gmail.com" required></label>
+                    <label for="mobileNum">Mobile Phone Number<input id="mobileNum" type="telephone" name="mobileNum" title="Mobile/cellphone number is required" autocomplete="mobile" required></label>
+                    <label for="businessName">Business/Organization Name<input id="businessName" type="text" name="businessName" title="Business/organiztion name is required" required autocomplete="organization"></label>
+                    <label for="businessDescription">Business/Organization Description<textarea id="businessDescription" name="businessDescription" title="Business/organiztion description" rows="8" cols="50"></textarea></label>
+                    <label for="timestamp"><input id="timestamp" type="hidden" name="timestamp" title="timestamp"></label>
+                    <div>Membership Level</div>
+                    <label for="np"><input id="np" type="radio" name="level" value="np" required>NP Membership is for non profit organizations and there is no fee</label>
+                    <label for="bronze"><input id="bronze" type="radio" name="level" value="bronze" required>Bronze Membership</label>
+                    <label for="silver"><input id="silver" type="radio" name="level" value="silver" required>Silver Membership</label>
+                    <label for="gold"><input id="gold" type="radio" name="level" value="gold" required>Gold Membership</label>
+                </fieldset>
+                <button type="submit">Join</button>
+            </form>
+            <div class="levelCards">
+                <h1>Membership Levels Information</h1>
+                <section>
+                    <h2>Non-Profit Membership Level</h2>
+                    <button class="button open-button" popovertarget="npModal">Learn More</button>
+                    <dialog class="modal" id="npModal" popover>
+                        <button class="close-button" popovertarget="npModal" popovertargetaction="hide">❌</button>
+                        <h3>Non-Profit Membership Level</h3>
+                        <p><strong>Cost: </strong>free</p>
+                        <p><strong>Benefits: </strong>1 vote in chamber decisions, 1 event advertizing/month</p>
+                </section>
+                <section>
+                    <h2>Bronze Membership Level</h2>
+                    <button class="button open-button" popovertarget="bronzeModal">Learn More</button>
+                    <dialog class="modal" id="bronzeModal" popover>
+                        <button class="close-button" popovertarget="bronzeModal" popovertargetaction="hide">❌</button>
+                        <h3>Bronze Membership Level</h3>
+                        <p><strong>Cost: </strong>$10 per month</p>
+                        <p><strong>Benefits: </strong>1 vote in chamber decisions, 1 event advertizing/month</p>
+                </section>
+                <section>
+                    <h2>Silver Membership Level</h2>
+                    <button class="button open-button" popovertarget="silverModal">Learn More</button>
+                    <dialog class="modal" id="silverModal" popover>
+                        <button class="close-button" popovertarget="silverModal" popovertargetaction="hide">❌</button>
+                        <h3>Silver Membership Level</h3>
+                        <p><strong>Cost: </strong>$15 per month</p>
+                        <p><strong>Benefits: </strong>2 votes in chamber decisions, 2 event advertizing/month, business spotlight</p>
+                </section>
+                <section>
+                    <h2>Gold Membership Level</h2>
+                    <button class="button open-button" popovertarget="goldModal">Learn More</button>
+                    <dialog class="modal" id="goldModal" popover>
+                        <button class="close-button" popovertarget="goldModal" popovertargetaction="hide">❌</button>
+                        <h3>gold Membership Level</h3>
+                        <p><strong>Cost: </strong>$20 per month</p>
+                        <p><strong>Benefits: </strong>3 votes in chamber decisions, unlimited event advertizing, business spotlight</p>
+                </section>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="contact">
