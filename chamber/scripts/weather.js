@@ -2,23 +2,18 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const forcastDiv = document.querySelector('.forecast');
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=38.44839018545127&lon=-105.23220502161476&units=imperial&appid=67a41587c37908bf3abddffc574a3967';
-const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=38.44839018545127&lon=-105.23220502161476&units=imperial&appid=67a41587c37908bf3abddffc574a3967';
+const today = new Date();
+const url = 'http://api.weatherapi.com/v1/forecast.json?key=e80bfbced5324aa384b200346262507&q=81212&days=4&dt=' + today;
 
-async function weatherApiFetch(url, forecastUrl) {
+// New api e80bfbced5324aa384b200346262507
+
+async function weatherApiFetch(url) {
     try {
         const response = await fetch(url);
-        const forecastResponse = await fetch(forecastUrl);
         if (response.ok) {
             const data = await response.json();
-            if (forecastResponse.ok) {
-                const forecastData = await forecastResponse.json();
-                console.log(forecastData);
-                displayForecast(forecastData);
-            } else {
-                throw Error(await forecastResponse.text());
-            }
-            displayResults(currentTemp, data);
+            console.log(data);
+            displayResults(data);
         } else {
             throw Error(await response.text());
         }
@@ -27,50 +22,39 @@ async function weatherApiFetch(url, forecastUrl) {
     }
 }
 
-function getForecastByDate(forecastData, date) {
-    forecastData.list.forEach((day) => {
-        console.log(day.dt);
-        console.log(date);
-        if (day.dt == date) {
-            console.log(day);
-            return day;
-        }
-    })
 
-}
 
-function displayForecast(forecastData) {
-    let forecastDate = new Date();
-    forecastDate.setHours(12, 0, 0, 0);
-    let count = 0;
-    while (count < 3) {
-        forecastDate.setDate(forecastDate.getDate() + 1);
-        console.log(forecastDate);
-        const epochSeconds = Math.floor(forecastDate.getTime() / 1000);
-        let dayData = getForecastByDate(forecastData, epochSeconds)
-        createFig(dayData);
-        count++;
-    }
-    
-}
 
-function createFig(data) {
-    console.log(data);
-    const dateElement = document.createElement('p');
-    const date = new Date(data.dt * 1000).toLocaleDateString();
-    dateElement.innerHTML = `${date}`
-    console.log(date);
+weatherApiFetch(url);
 
-}
-
-weatherApiFetch(url, forecastUrl);
-
-function displayResults(id, data) {
-    id.innerHTML = `<strong>${data.main.temp}&deg;F</strong>`;
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
+function displayResults(data) {
+    currentTemp.innerHTML = `<strong>${data.current.temp_f}&deg;F</strong>`;
+    const iconsrc = `https:${data.current.condition.icon}`;
+    let desc = data.current.condition.text;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', `icon of ${desc}`);
     captionDesc.textContent = `${desc}`;
+    const days = (data.forecast.forecastday).splice(1, 3);
+    console.log(days);
+    days.forEach((day) => {
+        let date = document.createElement('p');
+        date.textContent = day.date;
+        let temp = document.createElement('p');
+        temp.innerHTML = `<strong>${day.day.avgtemp_f}&deg;F</strong>`;
+        let fig = document.createElement('figure');
+        let forecastIcon = document.createElement('img');
+        let figCap = document.createElement('figcaption');
+        const forecastDesc = day.day.condition.text;
+        const forecastIconSrc = `https:${day.day.condition.icon}`;
+        forecastIcon.setAttribute('src', forecastIconSrc);
+        forecastIcon.setAttribute('alt', forecastDesc);
+        figCap.innerHTML = forecastDesc;
+        fig.appendChild(forecastIcon);
+        fig.appendChild(figCap);
+        forcastDiv.appendChild(date);
+        forcastDiv.appendChild(temp);
+        forcastDiv.appendChild(fig);
+    })
+
 }
 
