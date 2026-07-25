@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon-chamber.ico">
     <script type="module" src="scripts/chamber.mjs"></script>
-    <script type="module" src="scripts/join.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <title>Canon City Chamber of Commerce Membership Join Page</title>
 </head>
 
@@ -51,10 +51,10 @@
                     <label for="lastName">Last Name*<input name="lastName" id="lastName" type="text" title="Last name is required" autocomplete="family-name" required></label>
                     <label for="orgTitle">Title<input name="orgTitle" id="orgTitle" type="text" pattern="[\-A-Za-z\s]{7,}" title="Minimum 7 characters. Letters, spaces, and hyphens only." autocomplete="organization-title"></label>
                     <label for="email">Email<input name="email" id="email" type="email" autocomplete="email" title="Email address is required" placeholder="yourEmail@gmail.com" required></label>
-                    <label for="mobileNum">Mobile Phone Number<input id="mobileNum" type="telephone" name="mobileNum" title="Mobile/cellphone number is required" autocomplete="mobile" required></label>
+                    <label for="mobileNum">Mobile Phone Number<input id="mobileNum" type="tel" name="mobileNum" title="Mobile/cellphone number is required" autocomplete="mobile" required></label>
                     <label for="businessName">Business/Organization Name<input id="businessName" type="text" name="businessName" title="Business/organiztion name is required" required autocomplete="organization"></label>
                     <label for="businessDescription">Business/Organization Description<textarea id="businessDescription" name="businessDescription" title="Business/organiztion description" rows="8" cols="50"></textarea></label>
-                    <label for="timestamp"><input id="timestamp" type="hidden" name="timestamp" title="timestamp"></label>
+                    <label><input id="timestamp" type="hidden" name="timestamp" title="timestamp"></label>
                     <div>Membership Level</div>
                     <label for="np"><input id="np" type="radio" name="level" value="np" required>NP Membership is for non profit organizations and there is no fee</label>
                     <label for="bronze"><input id="bronze" type="radio" name="level" value="bronze" required>Bronze Membership</label>
@@ -73,6 +73,7 @@
                         <h3>Non-Profit Membership Level</h3>
                         <p><strong>Cost: </strong>free</p>
                         <p><strong>Benefits: </strong>1 vote in chamber decisions, 1 event advertizing/month</p>
+                    </dialog>
                 </section>
                 <section>
                     <h2>Bronze Membership Level</h2>
@@ -82,6 +83,7 @@
                         <h3>Bronze Membership Level</h3>
                         <p><strong>Cost: </strong>$10 per month</p>
                         <p><strong>Benefits: </strong>1 vote in chamber decisions, 1 event advertizing/month</p>
+                    </dialog>
                 </section>
                 <section>
                     <h2>Silver Membership Level</h2>
@@ -91,6 +93,7 @@
                         <h3>Silver Membership Level</h3>
                         <p><strong>Cost: </strong>$15 per month</p>
                         <p><strong>Benefits: </strong>2 votes in chamber decisions, 2 event advertizing/month, business spotlight</p>
+                    </dialog>
                 </section>
                 <section>
                     <h2>Gold Membership Level</h2>
@@ -100,6 +103,7 @@
                         <h3>gold Membership Level</h3>
                         <p><strong>Cost: </strong>$20 per month</p>
                         <p><strong>Benefits: </strong>3 votes in chamber decisions, unlimited event advertizing, business spotlight</p>
+                    </dialog>
                 </section>
             </div>
         </div>
