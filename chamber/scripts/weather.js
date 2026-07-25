@@ -5,8 +5,6 @@ const forcastDiv = document.querySelector('.forecast');
 const today = new Date();
 const url = 'https://api.weatherapi.com/v1/forecast.json?key=e80bfbced5324aa384b200346262507&q=81212&days=4&dt=' + today;
 
-// New api e80bfbced5324aa384b200346262507
-
 async function weatherApiFetch(url) {
     try {
         const response = await fetch(url);
