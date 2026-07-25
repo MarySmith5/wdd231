@@ -138,3 +138,5 @@ const displaySpotlights = (members, spotlight) => {
         spotlight.appendChild(card);
     })
 }
+
+
