@@ -3,7 +3,7 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const forcastDiv = document.querySelector('.forecast');
 const today = new Date();
-const url = 'http://api.weatherapi.com/v1/forecast.json?key=e80bfbced5324aa384b200346262507&q=81212&days=4&dt=' + today;
+const url = 'https://api.weatherapi.com/v1/forecast.json?key=e80bfbced5324aa384b200346262507&q=81212&days=4&dt=' + today;
 
 // New api e80bfbced5324aa384b200346262507
 
