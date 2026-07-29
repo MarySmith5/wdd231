@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="WDD 231: Web Frontend Development I -- Canon City, CO, Chamber of Commerce Chamber Membership Thanks Page">
+        content="WDD 231: Web Frontend Development I -- Canon City, CO, Chamber of Commerce Chamber Discover Page">
     <meta property="og:title" content="Canon City, CO, Chamber of Commerce Thanks Page">
     <meta property="og:description"
-        content="WDD 231: Web Frontend Development I -- Canon City, CO, Chamber of Commerce Membership Thanks Page">
-    <meta property="og:url" content="https://marysmith5.github.io/wdd231/chamber/thanks.html">
+        content="WDD 231: Web Frontend Development I -- Canon City, CO, Chamber of Commerce Discover Page">
+    <meta property="og:url" content="https://marysmith5.github.io/wdd231/chamber/discover.html">
     <meta property="og:image" content="https://marysmith5.github.io/wdd231/chamber/images/chamber-hero.webp">
     <meta name="author" content="Mary Smith">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,9 +21,8 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon-chamber.ico">
-    <script type="module" src="scripts/chamber.mjs"></script>
-    <script type="module" src="scripts/thanks.js" defer></script>
-    <title>Canon City Chamber of Commerce Membership Thanks Page</title>
+    <script type="module" src="scripts/discovery.js"></script>
+    <title>Canon City Chamber of Commerce Discover Page</title>
 </head>
 
 <body>
@@ -35,7 +34,7 @@
                 <li><a href="index.html" aria-label="Home">Home</a></li>
                 <li><a href="directory.html" aria-label="Directory">Directory</a></li>
                 <li><a href="join.html" aria-label="Join">Join</a></li>
-                <li><a href="#" aria-label="Discover">Discover</a></li>
+                <li class="current"><a href="#" aria-label="Discover">Discover</a></li>
             </ul>
         </nav>
         <button id="dark-theme" aria-label="Dark Mode"><img src="images/dark-theme.svg" alt="dark-theme toggle button"
@@ -43,13 +42,11 @@
         <button id="ham-btn" class="hamburger" aria-label="Navigation"></button>
     </header>
     <main>
-        <div id="thanks">
-            <h1>Thank you for joining Canon City Chamber of Commerce!</h1>
-            <h2>Membership Details:</h2>
-            <div id="results"></div>
+        <div id="discover">
+
         </div>
     </main>
-        
+
     <footer>
         <div class="contact">
             <p><strong>Canon City Chamber of Commerce</strong></p>
