@@ -10,12 +10,22 @@
     box-sizing: border-box;
 }
 
-.primary {
-    color: var(--primary-color);
+.primary::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    margin-left: 5px;
 }
 
-.secondary {
-    color: var(--secondary-color);
+.secondary::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--secondary-color);
+    margin-left: 5px;
 }
 
 .head-font {
