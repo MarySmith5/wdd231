@@ -34,7 +34,7 @@ function displayCards(fun) {
 
 displayCards(fun);
 displayWelcome();
-localStorage.setItem("lastVist", Date.now());
+localStorage.setItem("lastVisit", Date.now());
 
 
 function displayWelcome() {
@@ -43,8 +43,9 @@ function displayWelcome() {
     if (!lastVisit) {
         message.textContent = "Welcome! Let us know if you have any questions."
     } else {
-        const numDays = (Date.now() - lastVisit) /
+        let numDays = (Date.now() - lastVisit) /
             86400000;
+        console.log(numDays);
         if (numDays < 1) {
             message.textContent = "Back so soon! Awesome!";  
         } else {
