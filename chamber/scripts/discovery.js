@@ -34,6 +34,7 @@ function displayCards(fun) {
 
 displayCards(fun);
 displayWelcome();
+localStorage.removeItem("lastVisit");
 localStorage.setItem("lastVisit", Date.now());
 
 
