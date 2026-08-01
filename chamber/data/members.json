@@ -2,7 +2,7 @@
     "members": [
         {
             "name": "First Choice Fitness",
-            "address": "1530 Elm Ave., Canon City, CO 81212",
+            "address": "1530 Elm Ave., Cañon City, CO 81212",
             "phone": "(719) 269-3316",
             "url": "https://firstchoicefitness.net/",
             "image": "https://marysmith5.github.io/wdd231/chamber/images/FCC_image.webp",
@@ -10,7 +10,7 @@
         },
         {
             "name": "Jim's Tire Service Inc.",
-            "address": "1005 S 9th St., Canon City, CO 81212",
+            "address": "1005 S 9th St., Cañon City, CO 81212",
             "phone": "(719) 275-1886",
             "url": "https://www.myjimstires.com/",
             "image": "https://marysmith5.github.io/wdd231/chamber/images/jim_tire.webp",
@@ -18,7 +18,7 @@
         },
         {
             "name": "Big Burger World",
-            "address": "1205 S 9th St., Canon City, CO 81212",
+            "address": "1205 S 9th St., Cañon City, CO 81212",
             "phone": "(719) 275-8079",
             "url": "https://bigburgerworld.shop/",
             "image": "https://marysmith5.github.io/wdd231/chamber/images/bbw.webp",
@@ -34,7 +34,7 @@
         },
         {
             "name": "Coming Home Group of EWN – Real Broker LLC",
-            "address": "729 Main Street, Canon City, CO",
+            "address": "729 Main Street, Cañon City, CO",
             "phone": "(719) 429-7288",
             "url": "https://dellarieger.com/",
             "image": "https://marysmith5.github.io/wdd231/chamber/images/della.webp",
@@ -50,9 +50,9 @@
         },
         {
             "name": "H&R Block",
-            "address": "304-a 16th, Canon City, Colorado",
+            "address": "304-a 16th, Cañon City, Colorado",
             "phone": "(719) 275-3544",
-            "url": "https://www.hrblock.com/tax-office-near-me/colorado/canon-city/7082/?otppartnerid=9308&campaignid=pw_mcm_9308_9762&utm_medium=local",
+            "url": "https://www.hrblock.com/tax-office-near-me/colorado/Cañon-city/7082/?otppartnerid=9308&campaignid=pw_mcm_9308_9762&utm_medium=local",
             "image": "https://marysmith5.github.io/wdd231/chamber/images/hrb.webp",
             "level": 1
         }

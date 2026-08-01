@@ -495,3 +495,61 @@ dialog {
 #thanks {
     text-align: center;
 }
+
+/* ********** Discover Page ************* */
+
+#discover {
+    margin-bottom: 2rem;
+}
+
+#discover div {
+    margin-bottom: 1rem;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "description"
+    "address"
+    "learn";
+}
+
+#discover div h3 {
+    margin: 1rem 10px;
+    text-align: center;
+    grid-area: name;
+}
+#discover div p {
+    margin: 1rem 10px;
+    text-align: center;
+    grid-area: description;
+}
+
+#discover div address  {
+    margin: 1rem 10px;
+    text-align: center;
+}
+
+#discover div figure {
+  
+    grid-area: image;
+    margin: 0;
+}
+
+#discover div figure img {
+    width: 100%;
+}
+
+#discover div button {
+    margin: 1rem 10px;
+    padding: 10px 4rem;
+    text-align: center;
+    grid-area: learn;
+    background-image: linear-gradient(#2b4871, #1d314b);
+    color: white;
+    border-radius: 20px;
+}
+
