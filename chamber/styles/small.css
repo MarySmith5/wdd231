@@ -543,9 +543,6 @@ dialog {
     width: 100%;
 }
 
-#discover div figure img:hover {
-    box-shadow: 0 0 30px #DAA520;
-}
 
 #discover div button {
     margin: 1rem 10px;

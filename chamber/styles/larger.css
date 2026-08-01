@@ -58,6 +58,10 @@
        padding-left: 10px;
     }
 
+    #discover div figure img:hover {
+        box-shadow: 0 0 10px #DAA520;
+    }
+
 }
 
 @media only screen and (min-width: 64rem) {
