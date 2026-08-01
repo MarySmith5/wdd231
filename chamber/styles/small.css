@@ -356,7 +356,7 @@ h2 {
     top: 2.5rem;
     right: 10%;
     background-color: #2b4871;
-    padding: .5rem 3rem;
+    padding: .5rem 0;
     text-align: center;
     border-top: 5px solid #ffb404;
     border-bottom: 5px solid #ff8007;
@@ -364,7 +364,9 @@ h2 {
 }
 
 .call a {
+    padding: .5rem 3rem;
     color: white;
+    width: 100%;
 }
 
 .call a:hover {
