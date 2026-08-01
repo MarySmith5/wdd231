@@ -56,3 +56,4 @@ function displayWelcome() {
     welcome.appendChild(message);
     
 }
+
