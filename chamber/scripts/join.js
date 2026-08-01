@@ -1,6 +1,5 @@
 document.querySelector('.wf1').addEventListener('submit', function () {
-    const currentTimestamp = new Date();
-    document.getElementById('timestamp').value = currentTimestamp;
+    document.getElementById('timestamp').value = new Date();
 });
 
 const element = document.querySelector(".levelCards");
