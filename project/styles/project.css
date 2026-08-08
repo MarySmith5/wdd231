@@ -1,0 +1,447 @@
+:root {
+    --primary-color: #081b4e;
+    --secondary-color: rgb(242, 49, 78);
+    --head-font: "Merriweather",serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#logo {
+    max-width: 115px;
+    margin: 1rem auto;
+    border-radius: 15px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+header {
+    border-bottom: 10px solid var(--secondary-color);
+}
+
+article {
+    padding: 1rem;
+    margin: 1rem ;
+    border-radius: 10px;
+}
+
+p {
+    font-family: var(--body-font);
+    font-weight: 300;
+}
+
+footer {
+    margin-top: 1rem;
+    border-top: 10px solid var(--secondary-color);
+}
+
+#menu {
+    display: block;
+    font-family: "Roboto",
+            sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+
+
+#menu:hover {
+    color: var(--secondary-color)
+}
+
+.question {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--primary-color);
+    color: white;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.open-button {
+    font-family: var(--body-font);
+    font-weight: 300;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+.open-button:hover {
+    color: var(--secondary-color);
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0 auto;
+    font-family: "Merriweather", serif;
+}
+
+.navigation li {
+    display: none
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a[aria-current="page"] {
+    text-decoration: underline;
+    color: white;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content:"x";
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+h1 {
+    background-color: var(--primary-color);
+    font-family: "Merriweather", serif;
+    color: white;
+}
+
+h2,
+h3 {
+    color: var(--primary-color);
+    font-family: "Roboto",
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+
+}
+
+.cards section,
+#thanks section {
+    display: block;
+    padding: 1rem;
+    margin: 10px;
+    border: 1px solid var(--primary-color);
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards section img {
+    display: block;
+    width: 200px;
+    margin: 1rem auto;
+}
+
+.cards p, 
+.cards i, 
+#thanks section {
+    font-size: .75rem;
+    
+}
+
+.close-button, 
+#closeModal {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    color: grey;
+}
+
+dialog {
+    margin: auto;
+    border: none;
+    border-radius: 8px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 60%);
+}
+
+
+.attacks {
+    display: grid;
+    grid-template: 1fr 1fr /  1fr auto;
+}
+
+.attacks .con {
+    grid-column: 1 / 2;
+    display: block;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.gram {
+    grid-column: 2 / 3;
+    display: block;
+    padding: 2rem;
+    margin: 1rem;  
+}
+
+.attacks  .doc  {
+    border: 1px solid var(--primary-color);
+    margin: 1.5rem 2rem 1rem 2rem;
+    border-radius: 10px;
+    display: flex;
+    padding: 2rem;
+    grid-column: 1 / 4;
+}
+
+.doc img {
+    grid-column: 1 / 3;
+}
+
+.curse {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.curse h3 {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+a {
+    color: white;
+}
+
+.curse a:hover {
+    color: var(--secondary-color);
+}
+
+p, h4, i,
+cite {
+    display: block;
+    margin: .5rem;
+}
+
+h4 {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+#attacks {
+    display: grid;
+    grid-template-areas:
+        "curse"
+        "balaam-pic"
+        "balaam"
+        "visit";
+}
+
+
+#curse {
+    margin: 2rem 2rem 1rem 2rem;
+    text-align: center;
+    grid-area: curse;
+}
+
+#balaam-pic {
+    width: 100%;
+        height: auto;
+        display: block;
+    grid-area: balaam-pic;
+}
+
+#balaam {
+    margin: 2rem 2rem;
+    text-align: center;
+    grid-area: balaam;
+}
+
+.visit  {
+    border: none;
+    background-image: linear-gradient(#0f2e84, var(--primary-color));
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 4px #999;
+    grid-area: visit;
+    text-align: center;
+
+}
+
+.visit a {
+    text-decoration: none;
+    
+}
+#translate-btn {
+    border: none;
+    background-image: linear-gradient(#0f2e84, var(--primary-color));
+    color: white;
+    border-radius: 6px;
+    padding: .3rem;
+    width: 20%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 4px #999;
+    grid-area: visit;
+    text-align: center;
+
+}
+
+@media (min-width: 38em) {
+    #nav1 .navigation {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        #nav1 .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+        #nav1 .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .nav-div nav {
+        display: flex;
+    }
+
+    #logo {
+        float: left;
+        max-width: 115px;
+        margin: auto 3rem;
+        border-radius: 15px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        border-bottom: 10px solid var(--secondary-color);
+        align-items: center;
+        padding: 1rem 3rem 1rem 0;
+    }
+
+    .nav-div {
+        margin-left: 2rem;
+    }
+
+    .freedom {
+        padding: 1rem;
+        position: absolute;
+        top: 12rem;
+        left: 1rem;
+        right: 1rem;
+        
+        opacity: 0;
+        transition: 3s opacity 1s ease-in-out;
+    }
+
+    .freedom.visible {
+        background-color: rgba(255, 255, 255, 0.9);
+        opacity: .9;
+        
+    }
+
+    #attacks {
+        grid-template-areas:
+            "curse balaam-pic"
+                "balaam balaam-pic"
+                "visit visit";
+        font-size: 75%;
+        padding-right: .5rem;
+    }
+
+
+    #attacks img {
+        margin: auto;
+        width:90%;
+    }
+
+    #attacks section {
+        margin-top: 0;
+        margin-right: 0;
+    }
+    
+    .visit {
+        margin: 2rem auto 1rem auto ;
+        width: 75%;
+    }
+
+}
+
+@media (min-width: 64rem) {
+    .freedom {
+        top: 16rem;
+        max-width: 90%;
+        margin: 0 5%;
+        left: 0;
+    }
+
+    .balaam {
+        top: 12rem;
+        max-width: 90%;
+        margin: 0 5%;
+        left: 0;
+    }
+
+    #attacks {
+        grid-template-areas:
+            "curse balaam-pic"
+            "balaam visit"
+            "visit visit";
+        font-size: 100%;
+  
+    }
+
+    
+
+}
+
+@media (max-width: 30em) {
+    .question {
+        display: block;
+    }
+
+    .question button {
+        padding: .5rem;
+    }
+}
