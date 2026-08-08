@@ -2,6 +2,7 @@
 
 const translateButton = document.querySelector('#translate-btn');
 
+
 export async function translate(text, text_sp, name) {
 
     

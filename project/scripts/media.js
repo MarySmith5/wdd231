@@ -25,7 +25,6 @@ if(info.size > 0) {
     const newMedia = createNewMediaObject(info);
     submission.innerHTML = `
     <p><strong>Title: </strong>${newMedia.title}</p>
-    <p><strong>Url: </strong>${newMedia.link}</p>
     <p><strong>Media Type: </strong>${newMedia.type}</p>
     <p><strong>Categories: </strong>${newMedia.category}</p>
     <p><strong>Summary: </strong>${newMedia.summary}</p>`;
