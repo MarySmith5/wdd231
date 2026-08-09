@@ -38,6 +38,10 @@ header {
     border-bottom: 10px solid var(--secondary-color);
 }
 
+.site-title{
+    font-size: 2rem;
+}
+
 article {
     padding: 1rem;
     margin: 1rem ;
@@ -140,6 +144,8 @@ h1 {
     background-color: var(--primary-color);
     font-family: "Merriweather", serif;
     color: white;
+    text-align: center;
+    padding: 1rem;
 }
 
 h2,
@@ -367,7 +373,7 @@ h4 {
     .freedom {
         padding: 1rem;
         position: absolute;
-        top: 12rem;
+        top: 16rem;
         left: 1rem;
         right: 1rem;
         
