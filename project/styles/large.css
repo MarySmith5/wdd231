@@ -1,7 +1,6 @@
 @media (min-width: 38em) {
     #nav1 .navigation {
         display: flex;
-        flex-wrap: wrap;
     }
 
     #nav1 .navigation li {
