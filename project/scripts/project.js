@@ -45,6 +45,14 @@ const text21 = document.querySelector('#balaam i');
 const text21_sp = localStorage.getItem("text21_sp");
 const text22 = document.querySelector('.visit a');
 const text22_sp = localStorage.getItem("text22_sp");
+const text23 = document.querySelector('.site-title');
+const text23_sp = localStorage.getItem("text23_sp");
+const text24 = document.querySelector('#home');
+const text24_sp = localStorage.getItem("text24_sp");
+const text25 = document.querySelector('#media');
+const text25_sp = localStorage.getItem("text25_sp");
+const text26 = document.querySelector('#form');
+const text26_sp = localStorage.getItem("text26_sp");
 
 
 translateButton.addEventListener('click', async () => {
@@ -71,6 +79,10 @@ translateButton.addEventListener('click', async () => {
     translate(text20, text20_sp, "text20_sp");
     translate(text21, text21_sp, "text21_sp");
     translate(text22, text22_sp, "text22_sp");
+    translate(text23, text23_sp, "text23_sp");
+    translate(text24, text24_sp, "text24_sp");
+    translate(text25, text25_sp, "text25_sp");
+    translate(text26, text26_sp, "text26_sp");
 
     translateButton.textContent = "Inglés";
     translateButton.addEventListener('click', () => location.reload());
