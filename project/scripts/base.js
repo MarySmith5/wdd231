@@ -68,10 +68,58 @@ let media = [
             "This video teaches the inspiring principles that made the U.S.A. a free country. "
     },
     {
+        title: "Freedoms Foundations Part 2: The Marxist Attack",
+        link: "https://youtu.be/t5gWti2Ge_A?si=uHySnJltYzqnR8BS",
+        type: "video",
+        category: "principles, morality",
+        summary:
+            "Understand the various political and economic systems, so that we can see clearly how to put America back on track for freedom and prosperity."
+    },
+    {
+        title: "Freedom's Foundations Part 3: The Insiders",
+        link: "https://youtu.be/Pf15ZlttIuo?si=6LI2LR5oy0k_o5_l",
+        type: "video",
+        category: "conspiracy, occult",
+        summary:
+            "Learn about the Insiders that guide countries behind the scenes."
+    },
+    {
+        title: "Freedom's Foundations Part 4: The Solution",
+        link: "https://youtu.be/tG_0eODXBzI?si=3OiCupudr7Dxi_CB",
+        type: "video",
+        category: "principles, conspiracy, occult",
+        summary:
+            "This video examines how the Insiders operate, some of the traps they lay, and our plan to defeat them."
+    },
+    {
         title: "Global Tyranny...Step by Step: The United Nations and the Emerging New World Order",
         link: "https://a.co/d/08s6FRq8",
         type: "book",
-        category: "conspiracy, occult",
+        category: "division, conspiracy, occult",
+        summary:
+            "A comprehensive look at the organization through which the conspiracy operates."
+    },
+    {
+        title: "Con-Con1",
+        link: "https://www.freedomfirstsociety.org/con-con-1/",
+        type: "video",
+        category: "principles, conspiracy",
+        summary:
+            "Teachs little-known principles that make a Constitutional Convention dangerous."
+    },
+    {
+        title: "The President Makers",
+        link: "https://www.freedomfirstsociety.org/product/the-president-makers/",
+        type: "book",
+        category: "conspiracy",
+        summary:
+            "A comprehensive look at the organization through which the conspiracy operates."
+    },
+    {
+        title: "Masters of Deception: The Rise of the Council on Foreign Relations",
+        link: "https://www.freedomfirstsociety.org/product/masters-of-deception/",
+        type: "book",
+        category: "conspiracy, division",
         summary:
             "A comprehensive look at the organization through which the conspiracy operates."
     }
