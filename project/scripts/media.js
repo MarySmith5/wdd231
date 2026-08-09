@@ -129,21 +129,21 @@ function createNewMediaObject(data) {
 }
 
 function createCategories(data) {
-    let category = [];
+    let category = "";
     if (data.get('principles')) {
-        category.push("principles");
+        category += "principles, ";
     }
     if (data.get('morality')) {
-        category.push("morality");
+        category += "morality, ";
     }
     if (data.get('division')) {
-        category.push("division");
+        category += "division, ";
     }
     if (data.get('conspiracy')) {
-        category.push("conspiracy");
+        category += "conspiracy, ";
     }
     if (data.get('occult')) {
-        category.push("occult");
+        category += "occult";
     }
     return category;
 }
