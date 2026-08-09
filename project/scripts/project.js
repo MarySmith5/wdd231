@@ -54,6 +54,8 @@ const text25_sp = localStorage.getItem("text25_sp");
 const text26 = document.querySelector('#form');
 const text26_sp = localStorage.getItem("text26_sp");
 
+const element = document.querySelector("article");
+element.classList.add("visible");
 
 translateButton.addEventListener('click', async () => {
 
@@ -88,5 +90,4 @@ translateButton.addEventListener('click', async () => {
     translateButton.addEventListener('click', () => location.reload());
 });
 
-const element = document.querySelector("article");
-element.classList.add("visible"); 
+ 
